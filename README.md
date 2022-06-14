@@ -31,13 +31,13 @@ Use this `link` to access a video tutorial: [Adrian Strozzi - E Commerce Back En
 
 ## <span style="color:violet">Usage</span>
 
-1 - You can clone or download this repo as a ZIP file:
+1 - You can `clone` or `download` this repo as a ZIP file:
 
 ```sh
 git clone https://github.com/adrianstrozzi/Tec13ECommerceBackEnd.git
 ```
 
-2 - Once you have downloaded the App use the following command in yout terminal to install the required dependencies:
+2 - Once you have downloaded the App use the following command in your terminal to `install the required dependencies`:
 
 ```sh
 npm install
@@ -51,7 +51,7 @@ DB_PW=yourSQLpassword
 DB_NAME=ecommerce_db
 ```
 
-4 - Finally open MySQL and use the following code to create the required database (this is included in the schema.sql file in the db folder):
+4 - Open `MySQL` and use the following code to create the required database (this is included in the `schema.sql` file in the `db folder`):
 
 ```sh
 -- DROP DATABASE
@@ -61,7 +61,7 @@ DROP DATABASE IF EXISTS ecommerce_db;
 CREATE DATABASE ecommerce_db;
 ```
 
-5 - Once you create the Database run the following command in your terminal to seed the data (script included in package.json file):
+5 - Once you create the Database run the following command in your terminal to `seed` the data (script included in `package.json` file):
 
 ```sh
 npm run seed
