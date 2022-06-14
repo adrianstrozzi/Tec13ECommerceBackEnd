@@ -7,10 +7,8 @@ router.get('/', async (req, res) => {
   // find all categories
   // be sure to include its associated Products
   const categoryData = await Category.findAll({
-    attributes: ["id", "category_name"],
     include: [{
-      model: Product,
-      attributes: ["id", "product_name", "price", "stock", "category_id"]
+      model: Product
     }]
   }).catch((err) => {
     res.json(err);
@@ -22,12 +20,12 @@ router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   try {
-    const categoryData = await Category.findByPk(req.params.id);
-    if (!categoryData) {
+    const categoryDataById = await Category.findByPk(req.params.id);
+    if (!categoryDataById) {
       res.status(404).json({ message: 'No category with this id!' });
       return;
     }
-    res.status(200).json(categoryData);
+    res.status(200).json(categoryDataById);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -36,9 +34,9 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // create a new category
   try {
-    const categoryData = await Category.create(req.body);
+    const newCategoryData = await Category.create(req.body);
     // 200 status code means the request is successful
-    res.status(200).json(categoryData);
+    res.status(200).json(newCategoryData);
   } catch (err) {
     // 400 status code means the server could not understand the request
     res.status(400).json(err);
@@ -48,16 +46,16 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
   try {
-    const categoryData = await Category.update(req.body, {
+    const updateCategoryData = await Category.update(req.body, {
       where: {
         id: req.params.id,
       },
     });
-    if (!categoryData[0]) {
+    if (!updateCategoryData[0]) {
       res.status(404).json({ message: 'No category with this id!' });
       return;
     }
-    res.status(200).json(categoryData);
+    res.status(200).json(updateCategoryData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -66,16 +64,16 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
   try {
-    const categoryData = await Category.destroy({
+    const deleteCategoryData = await Category.destroy({
       where: {
         id: req.params.id,
       },
     });
-    if (!categoryData) {
+    if (!deleteCategoryData) {
       res.status(404).json({ message: 'No category with this id!' });
       return;
     }
-    res.status(200).json(req.body);
+    res.status(200).json(`${deleteCategoryData} was deleted.`);
   } catch (err) {
     res.status(500).json(err);
   }
