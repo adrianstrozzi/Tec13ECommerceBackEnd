@@ -60,9 +60,15 @@ DROP DATABASE IF EXISTS ecommerce_db;
 CREATE DATABASE ecommerce_db;
 ```
 
-5 - Make sure you install [(Thunder Client)](https://www.thunderclient.com/) as an extension in VS Code as you will be using it to send the requests to manipulate your database.
+5 - Once you create the Database run the following command in your terminal to seed the data (script included in package.json file):
 
-6 - Visit the [Video Tutorial](https://drive.google.com/file/d/1rCW8PV7mXX9mIP-JXy4RhDxPa2ALUuZy/view?usp=sharing) for a detailed guide on how to use the App.
+```sh
+npm run seed
+```
+
+6 - Make sure you install [(Thunder Client)](https://www.thunderclient.com/) as an extension in VS Code as you will be using it to send the requests to manipulate your database.
+
+7 - Visit the [Video Tutorial](https://drive.google.com/file/d/1rCW8PV7mXX9mIP-JXy4RhDxPa2ALUuZy/view?usp=sharing) for a detailed guide on how to use the App.
 
 ## <span style="color:violet">Credits</span>
 
