@@ -33,6 +33,9 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   // create a new category
+  // {
+  //   "category_name": "Musical Instruments"
+  // }
   try {
     const newCategoryData = await Category.create(req.body);
     // 200 status code means the request is successful
@@ -73,7 +76,7 @@ router.delete('/:id', async (req, res) => {
       res.status(404).json({ message: 'No category with this id!' });
       return;
     }
-    res.status(200).json(`${deleteCategoryData} was deleted.`);
+    res.status(200).json(`Category with Id: ${deleteCategoryData} was deleted.`);
   } catch (err) {
     res.status(500).json(err);
   }
