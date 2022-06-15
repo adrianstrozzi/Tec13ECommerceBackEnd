@@ -15,19 +15,19 @@
 
 ## <span style="color:violet">Stack</span>
 
-<span style="color:skyblue">**1-JavaScript**</span>
+<span style="color:skyblue">**1 - JavaScript**</span>
 
-<span style="color:skyblue">**2-MySQL**</span> [(link)](https://www.mysql.com/)
+<span style="color:skyblue">**2 - MySQL**</span> [(link)](https://www.mysql.com/)
 
-<span style="color:skyblue">**3-Node JS**</span> [(link)](https://nodejs.org/en/)
+<span style="color:skyblue">**3 - Node JS**</span> [(link)](https://nodejs.org/en/)
 
-<span style="color:skyblue">**4-Sequeliza**</span> [(link)](https://sequelize.org/)
+<span style="color:skyblue">**4 - Sequelize**</span> [(link)](https://sequelize.org/)
 
-<span style="color:skyblue">**5-Thunder Client**</span> [(link)](https://www.thunderclient.com/)
+<span style="color:skyblue">**5 - Thunder Client**</span> [(link)](https://www.thunderclient.com/)
 
 ## <span style="color:violet">Video Tutorial</span>
 
-Use this `link` to access a video tutorial: [Adrian Strozzi - E Commerce Back End](https://drive.google.com/file/d/1rCW8PV7mXX9mIP-JXy4RhDxPa2ALUuZy/view?usp=sharing)
+Use this `link` to access a video tutorial: [Adrian Strozzi - E Commerce Back End](https://youtu.be/fAaJUzQ1g14)
 
 ## <span style="color:violet">Usage</span>
 
@@ -67,9 +67,9 @@ CREATE DATABASE ecommerce_db;
 npm run seed
 ```
 
-6 - Make sure you install [(Thunder Client)](https://www.thunderclient.com/) as an extension in VS Code as you will be using it to send the requests to manipulate your database.
+6 - Make sure you install [Thunder Client](https://www.thunderclient.com/) as an extension in VS Code as you will be using it to send the requests to manipulate your database.
 
-7 - Visit the [Video Tutorial](https://drive.google.com/file/d/1rCW8PV7mXX9mIP-JXy4RhDxPa2ALUuZy/view?usp=sharing) for a detailed guide on how to use the App.
+7 - Visit the [Video Tutorial](https://youtu.be/fAaJUzQ1g14) for a detailed guide on how to use the App.
 
 ## <span style="color:violet">Credits</span>
 
